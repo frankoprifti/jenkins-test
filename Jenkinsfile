@@ -11,9 +11,9 @@ pipeline {
                 sh 'npm run build' 
             }
         }
-        stage('Serve') { 
+        stage('Deploy to NGINX') { 
             steps {
-                sh 'npx serve -s build' 
+                sh 'sudo cp build /var/www/html' 
             }
         }
     }
