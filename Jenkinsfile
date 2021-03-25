@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy to NGINX') { 
             steps {
-                sh 'sudo cp build /var/www/html' 
+                sh 'sudo cp -r build/. /var/www/html/react' 
             }
         }
     }
