@@ -1,4 +1,5 @@
 pipeline {
+    agent any
     stages {
         stage('NPM INSTALL') { 
             steps {
