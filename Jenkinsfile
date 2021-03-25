@@ -15,5 +15,5 @@ pipeline {
                 sh 'npx serve -s build' 
             }
         }
-    },
+    }
 }
